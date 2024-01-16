@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: orange;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+h3{color:orange;
+}
+</style>
+</head>
+<body>
+
+<h3>ESPACE DONATEURE:</h3>
+<p>si vous voulez monsieur/madame nous donner quelque chose pour aider les victimes de seisme ,<br><br>remplire le formulaire suivant et en vous contacterer:</p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Prenom</label>
+    <input type="text" id="fname" name="firstname" placeholder="votre prenom..">
+
+    <label for="lname">Nom</label>
+    <input type="text" id="lname" name="lastname" placeholder="votre nom..">
+
+    <label for="country">Ville</label>
+    <select id="country" name="country">
+      <option value="r">Rabat</option>
+      <option value="s">Sale</option>
+	  <option value="a">autre place</option>
+	  
+    </select>
+<label for="ndt">Numero de telephone</label>
+    <input type="text" id="ndt" name="numero de telephone" placeholder="votre numero de telephone..">
+    <label for="subject">des remarques:</label>
+    <textarea id="subject" name="subject" placeholder="Expressez-vous..." style="height:200px"></textarea>
+	<p>Merci de nous aider :)</p>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
